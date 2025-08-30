@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <title>English Word Meaning - Letter A</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', 'Noto Sans Devanagari', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    input, button {
+      display: block;
+      margin: 0 auto 20px auto;
+      padding: 10px;
+      font-size: 16px;
+      width: 80%;
+      max-width: 600px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+      font-size: 15px;
+    }
+
+    th {
+      background-color: #34495e;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    tr:hover {
+      background-color: #eaf2ff;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Letter A - शब्द सूची</h2>
+
+  <!-- 🔍 Search Box -->
+  <input type="text" id="searchInput" placeholder="शब्द खोजें..." onkeyup="searchTable()">
+
+  <!-- 📄 Export Button -->
+  <button onclick="downloadPDF()">📄 Export as PDF</button>
+
+  <!-- 🔠 Word Table -->
+  <table>
+    <tr>
+  <th>No</th>
+  <th>Word</th>
+  <th>Pronunciation</th>
+  <th>Verb Forms</th>
+  <th>Example</th>
+  <th>🔊</th>
+  <th>Tag</th>
+  <th>🧠</th>
+  <th>Meaning (Hindi)</th>
+</tr>
+
+<tr id="verb1">
+  <td>1</td>
+  <td>Abandon</td>
+  <td>uh-BAN-dun</td>
+  <td>Abandon, Abandoned, Abandoned</td>
+  <td>He abandoned the mission.</td>
+  <td><button onclick="speak('Abandon')">🔊</button></td>
+  <td><span class="tag">🏃 Action</span></td>
+  <td><button onclick="generateSentence('abandon')">🧠</button></td>
+  <td>त्याग देना, छोड़ देना</td>
+</tr>
+
+<tr id="verb2">
+  <td>2</td>
+  <td>Absorb</td>
+  <td>ub-ZORB</td>
+  <td>Absorb, Absorbed, Absorbed</td>
+  <td>Plants absorb sunlight.</td>
+  <td><button onclick="speak('Absorb')">🔊</button></td>
+  <td><span class="tag">🧠 Mental</span></td>
+  <td><button onclick="generateSentence('absorb')">🧠</button></td>
+  <td>सोख लेना, ग्रहण करना</td>
+</tr>
+
+<tr id="verb3">
+  <td>3</td>
+  <td>Accelerate</td>
+  <td>ak-SEL-uh-rate</td>
+  <td>Accelerate, Accelerated, Accelerated</td>
+  <td>The car accelerated quickly.</td>
+  <td><button onclick="speak('Accelerate')">🔊</button></td>
+  <td><span class="tag">🏃 Action</span></td>
+  <td><button onclick="generateSentence('accelerate')">🧠</button></td>
+  <td>गति बढ़ाना, तेज़ करना</td>
+</tr>
+
+<tr id="verb4">
+  <td>4</td>
+  <td>Accept</td>
+  <td>ak-SEPT</td>
+  <td>Accept, Accepted, Accepted</td>
+  <td>She accepted the offer.</td>
+  <td><button onclick="speak('Accept')">🔊</button></td>
+  <td><span class="tag">🧠 Mental</span></td>
+  <td><button onclick="generateSentence('accept')">🧠</button></td>
+  <td>स्वीकार करना, मान लेना</td>
+</tr>
+
+<tr id="verb5">
+  <td>5</td>
+  <td>Accomplish</td>
+  <td>uh-KOM-plish</td>
+  <td>Accomplish, Accomplished, Accomplished</td>
+  <td>He accomplished his goals.</td>
+  <td><button onclick="speak('Accomplish')">🔊</button></td>
+  <td><span class="tag">🏃 Action</span></td>
+  <td><button onclick="generateSentence('accomplish')">🧠</button></td>
+  <td>पूरा करना, हासिल करना</td>
+</tr>
+
+<tr id="verb6">
+  <td>6</td>
+  <td>Accuse</td>
+  <td>uh-KYOOZ</td>
+  <td>Accuse, Accused, Accused</td>
+  <td>They accused him of theft.</td>
+  <td><button onclick="speak('Accuse')">🔊</button></td>
+  <td><span class="tag">🧠 Mental</span></td>
+  <td><button onclick="generateSentence('accuse')">🧠</button></td>
+  <td>आरोप लगाना, दोष देना</td>
+</tr>
+
+<tr id="verb7">
+  <td>7</td>
+  <td>Achieve</td>
+  <td>uh-CHEEV</td>
+  <td>Achieve, Achieved, Achieved</td>
+  <td>She achieved success.</td>
+  <td><button onclick="speak('Achieve')">🔊</button></td>
+  <td><span class="tag">🏃 Action</span></td>
+  <td><button onclick="generateSentence('achieve')">🧠</button></td>
+  <td>हासिल करना, प्राप्त करना</td>
+</tr>
+
+<tr id="verb8">
+  <td>8</td>
+  <td>Acknowledge</td>
+  <td>ak-NOL-ij</td>
+  <td>Acknowledge, Acknowledged, Acknowledged</td>
+  <td>She acknowledged his help.</td>
+  <td><button onclick="speak('Acknowledge')">🔊</button></td>
+  <td><span class="tag">🧠 Mental</span></td>
+  <td><button onclick="generateSentence('acknowledge')">🧠</button></td>
+  <td>स्वीकार करना, मान्यता देना</td>
+</tr>
+
+<tr id="verb9">
+  <td>9</td>
+  <td>Adapt</td>
+  <td>uh-DAPT</td>
+  <td>Adapt, Adapted, Adapted</td>
+  <td>He adapted to the new environment.</td>
+  <td><button onclick="speak('Adapt')">🔊</button></td>
+  <td><span class="tag">🧠 Mental</span></td>
+  <td><button onclick="generateSentence('adapt')">🧠</button></td>
+  <td>अनुकूल होना, ढालना</td>
+</tr>
+
+<tr id="verb10">
+  <td>10</td>
+  <td>Add</td>
+  <td>AD</td>
+  <td>Add, Added, Added</td>
+  <td>Please add your name to the list.</td>
+  <td><button onclick="speak('Add')">🔊</button></td>
+  <td><span class="tag">🏃 Action</span></td>
+  <td><button onclick="generateSentence('add')">🧠</button></td>
+  <td>जोड़ना, शामिल करना</td>
+</tr>
+
+<tr id="verb11">
+  <td>11</td>
+  <td>Adjust</td>
+  <td>uh-JUST</td>
+  <td>Adjust, Adjusted, Adjusted</td>
+  <td>He adjusted the mirror.</td>
+  <td><button onclick="speak('Adjust')">🔊</button></td>
+  <td><span class="tag">🏃 Action</span></td>
+  <td><button onclick="generateSentence('adjust')">🧠</button></td>
+  <td>समायोजित करना, ठीक करना</td>
+</tr>
+
+<tr id="verb12">
+  <td>12</td>
+  <td>Admire</td>
+  <td>ad-MY-er</td>
+  <td>Admire, Admired, Admired</td>
+  <td>I admire your courage.</td>
+  <td><button onclick="speak('Admire')">🔊</button></td>
+  <td><span class="tag">🧠 Mental</span></td>
+  <td><button onclick="generateSentence('admire')">🧠</button></td>
+  <td>प्रशंसा करना, सराहना करना</td>
+</tr>
+
+<tr id="verb13">
+  <td>13</td>
+  <td>Admit</td>
+  <td>ad-MIT</td>
+  <td>Admit, Admitted, Admitted</td>
+  <td>He admitted his mistake.</td>
+  <td><button onclick="speak('Admit')">🔊</button></td>
+  <td><span class="tag">🧠 Mental</span></td>
+  <td><button onclick="generateSentence('admit')">🧠</button></td>
+  <td>स्वीकार करना, प्रवेश देना</td>
+</tr>
+
+<tr id="verb14">
+  <td>14</td>
+  <td>Adopt</td>
+  <td>uh-DOPT</td>
+  <td>Adopt, Adopted, Adopted</td>
+  <td>They adopted a new strategy.</td>
+  <td><button onclick="speak('Adopt')">🔊</button></td>
+  <td><span class="tag">🏃 Action</span></td>
+  <td><button onclick="generateSentence('adopt')">🧠</button></td>
+  <td>अपनाना, ग्रहण करना</td>
+</tr>
+
+<tr id="verb15">
+  <td>15</td>
+  <td>Advance</td>
+  <td>ad-VANS</td>
+  <td>Advance, Advanced, Advanced</td>
+  <td>The army advanced towards the city.</td>
+  <td><button onclick="speak('Advance')">🔊</button></td>
+  <td><span class="tag">🏃 Action</span></td>
+  <td><button onclick="generateSentence('advance')">🧠</button></td>
+  <td>aage बढ़ना, उन्नति करना</td>
+</tr>
+
+<tr id="verb16">
+  <td>16</td>
+  <td>Affect</td>
+  <td>uh-FEKT</td>
+  <td>Affect, Affected, Affected</td>
+  <td>The weather affects our mood.</td>
+  <td><button onclick="speak('Affect')">🔊</button></td>
+  <td><span class="tag">🧠 Mental</span></td>
+  <td><button onclick="generateSentence('affect')">🧠</button></td>
+  <td>प्रभाव डालना</td>
+</tr>
+
+<tr id="verb17">
+  <td>17</td>
+  <td>Afford</td>
+  <td>uh-FORD</td>
+  <td>Afford, Afforded, Afforded</td>
+  <td>I cannot afford this expensive car.</td>
+  <td><button onclick="speak('Afford')">🔊</button></td>
+  <td><span class="tag">🧠 Mental</span></td>
+  <td><button onclick="generateSentence('afford')">🧠</button></td>
+  <td>सक्षम होना, खर्च उठाना</td>
+</tr>
+
+<tr id="verb18">
+  <td>18</td>
+  <td>Agree</td>
+  <td>uh-GREE</td>
+  <td>Agree, Agreed, Agreed</td>
+  <td>They agreed to the terms.</td>
+  <td><button onclick="speak('Agree')">🔊</button></td>
+  <td><span class="tag">🧠 Mental</span></td>
+  <td><button onclick="generateSentence('agree')">🧠</button></td>
+  <td>सहमत होना, मान लेना</td>
+</tr>
+
+<tr id="verb19">
+  <td>19</td>
+  <td>Aim</td>
+  <td>AYM</td>
+  <td>Aim, Aimed, Aimed</td>
+  <td>He aimed at the target.</td>
+  <td><button onclick="speak('Aim')">🔊</button></td>
+  <td><span class="tag">🏃 Action</span></td>
+  <td><button onclick="generateSentence('aim')">🧠</button></td>
+  <td>लक्ष्य बनाना, निशाना लगाना</td>
+</tr>
+
+<tr id="verb20">
+  <td>20</td>
+  <td>Allow</td>
+  <td>uh-LOW</td>
+  <td>Allow, Allowed, Allowed</td>
+  <td>The teacher allowed him to leave early.</td>
+  <td><button onclick="speak('Allow')">🔊</button></td>
+  <td><span class="tag">🧠 Mental</span></td>
+  <td><button onclick="generateSentence('allow')">🧠</button></td>
+  <td>अनुमति देना, इजाजत देना</td>
+</tr>
+
+<tr id="verb21">
+  <td>21</td>
+  <td>Announce</td>
+  <td>uh-NOUNS</td>
+  <td>Announce, Announced, Announced</td>
+  <td>The company announced a new product.</td>
+  <td><button onclick="speak('Announce')">🔊</button></td>
+  <td><span class="tag">🧠 Mental</span></td>
+  <td><button onclick="generateSentence('announce')">🧠</button></td>
+  <td>घोषणा करना</td>
+</tr>
+
+<tr id="verb22">
+  <td>22</td>
+  <td>Anticipate</td>
+  <td>an-TIS-uh-pate</td>
+  <td>Anticipate, Anticipated, Anticipated</td>
+  <td>We anticipate good results.</td>
+  <td><button onclick="speak('Anticipate')">🔊</button></td>
+  <td><span class="tag">🧠 Mental</span></td>
+  <td><button onclick="generateSentence('anticipate')">🧠</button></td>
+  <td>पूर्वानुमान करना, उम्मीद करना</td>
+</tr>
+
+<tr id="verb23">
+  <td>23</td>
+  <td>Appear</td>
+  <td>uh-PEER</td>
+  <td>Appear, Appeared, Appeared</td>
+  <td>She appeared happy.</td>
+  <td><button onclick="speak('Appear')">🔊</button></td>
+  <td><span class="tag">🧠 Mental</span></td>
+  <td><button onclick="generateSentence('appear')">🧠</button></td>
+  <td>प्रकट होना, दिखाई देना</td>
+</tr>
+
+<tr id="verb24">
+  <td>24</td>
+  <td>Apply</td>
+  <td>uh-PLY</td>
+  <td>Apply, Applied, Applied</td>
+  <td>She applied for the job.</td>
+  <td><button onclick="speak('Apply')">🔊</button></td>
+  <td><span class="tag">🏃 Action</span></td>
+  <td><button onclick="generateSentence('apply')">🧠</button></td>
+  <td>आवेदन करना, लागू करना</td>
+</tr>
+
+<tr id="verb25">
+  <td>25</td>
+  <td>Appoint</td>
+  <td>uh-POINT</td>
+  <td>Appoint, Appointed, Appointed</td>
+  <td>The manager appointed a new team leader.</td>
+  <td><button onclick="speak('Appoint')">🔊</button></td>
+  <td><span class="tag">🏃 Action</span></td>
+  <td><button onclick="generateSentence('appoint')">🧠</button></td>
+  <td>नियुक्त करना</td>
+</tr>
+
+<tr id="verb26">
+  <td>26</td>
+  <td>Appreciate</td>
+  <td>uh-PREE-shee-ayt</td>
+  <td>Appreciate, Appreciated, Appreciated</td>
+  <td>I appreciate your help.</td>
+  <td><button onclick="speak('Appreciate')">🔊</button></td>
+  <td><span class="tag">🧠 Mental</span></td>
+  <td><button onclick="generateSentence('appreciate')">🧠</button></td>
+  <td>सराहना करना, कदर करना</td>
+</tr>
+
+<tr id="verb27">
+  <td>27</td>
+  <td>Approach</td>
+  <td>uh-PROHCH</td>
+  <td>Approach, Approached, Approached</td>
+  <td>He approached the teacher with a question.</td>
+  <td><button onclick="speak('Approach')">🔊</button></td>
+  <td><span class="tag">🏃 Action</span></td>
+  <td><button onclick="generateSentence('approach')">🧠</button></td>
+  <td>निकट आना, संपर्क करना</td>
+</tr>
+
+<tr id="verb28">
+  <td>28</td>
+  <td>Approve</td>
+  <td>uh-PROOV</td>
+  <td>Approve, Approved, Approved</td>
+  <td>The manager approved the proposal.</td>
+  <td><button onclick="speak('Approve')">🔊</button></td>
+  <td><span class="tag">🧠 Mental</span></td>
+  <td><button onclick="generateSentence('approve')">🧠</button></td>
+  <td>मंजूरी देना, अनुमोदन करना</td>
+</tr>
+
+<tr id="verb29">
+  <td>29</td>
+  <td>Argue</td>
+  <td>AR-gyoo</td>
+  <td>Argue, Argued, Argued</td>
+  <td>They argued about the price.</td>
+  <td><button onclick="speak('Argue')">🔊</button></td>
+  <td><span class="tag">🧠 Mental</span></td>
+  <td><button onclick="generateSentence('argue')">🧠</button></td>
+  <td>बहस करना, तर्क करना</td>
+</tr>
+
+<tr id="verb30">
+  <td>30</td>
+  <td>Arise</td>
+  <td>uh-RIZE</td>
+  <td>Arise, Arose, Arisen</td>
+  <td>Problems arose during the project.</td>
+  <td><button onclick="speak('Arise')">🔊</button></td>
+  <td><span class="tag">🏃 Action</span></td>
+  <td><button onclick="generateSentence('arise')">🧠</button></td>
+  <td>उभरना, पैदा होना</td>
+</tr>
+
+<tr id="verb31">
+  <td>31</td>
+  <td>Arrange</td>
+  <td>uh-RAYNJ</td>
+  <td>Arrange, Arranged, Arranged</td>
+  <td>She arranged the meeting.</td>
+  <td><button onclick="speak('Arrange')">🔊</button></td>
+  <td><span class="tag">🏃 Action</span></td>
+  <td><button onclick="generateSentence('arrange')">🧠</button></td>
+  <td>व्यवस्थित करना, सजाना</td>
+</tr>
+
+<tr id="verb32">
+  <td>32</td>
+  <td>Arrive</td>
+  <td>uh-RIVE</td>
+  <td>Arrive, Arrived, Arrived</td>
+  <td>They arrived late to the party.</td>
+  <td><button onclick="speak('Arrive')">🔊</button></td>
+  <td><span class="tag">🏃 Action</span></td>
+  <td><button onclick="generateSentence('arrive')">🧠</button></td>
+  <td>पहुंचना</td>
+</tr>
+
+<tr id="verb33">
+  <td>33</td>
+  <td>Ask</td>
+  <td>ASK</td>
+  <td>Ask, Asked, Asked</td>
+  <td>She asked a question.</td>
+  <td><button onclick="speak('Ask')">🔊</button></td>
+  <td><span class="tag">🏃 Action</span></td>
+  <td><button onclick="generateSentence('ask')">🧠</button></td>
+  <td>पूछना, मांगना</td>
+</tr>
+
+<tr id="verb34">
+  <td>34</td>
+  <td>Assume</td>
+  <td>uh-SOOM</td>
+  <td>Assume, Assumed, Assumed</td>
+  <td>I assumed he was correct.</td>
+  <td><button onclick="speak('Assume')">🔊</button></td>
+  <td><span class="tag">🧠 Mental</span></td>
+  <td><button onclick="generateSentence('assume')">🧠</button></td>
+  <td>मान लेना, धारण करना</td>
+</tr>
+
+<tr id="verb35">
+  <td>35</td>
+  <td>Assure</td>
+  <td>uh-SHUR</td>
+  <td>Assure, Assured, Assured</td>
+  <td>He assured her of success.</td>
+  <td><button onclick="speak('Assure')">🔊</button></td>
+  <td><span class="tag">🧠 Mental</span></td>
+  <td><button onclick="generateSentence('assure')">🧠</button></td>
+  <td>आश्वस्त करना</td>
+</tr>
+
+<tr id="verb36">
+  <td>36</td>
+  <td>Attach</td>
+  <td>uh-TACH</td>
+  <td>Attach, Attached, Attached</td>
+  <td>Please attach the file.</td>
+  <td><button onclick="speak('Attach')">🔊</button></td>
+  <td><span class="tag">🏃 Action</span></td>
+  <td><button onclick="generateSentence('attach')">🧠</button></td>
+  <td>जोड़ना, संलग्न करना</td>
+</tr>
+
+<tr id="verb37">
+  <td>37</td>
+  <td>Attempt</td>
+  <td>uh-TEMPT</td>
+  <td>Attempt, Attempted, Attempted</td>
+  <td>He attempted to solve the problem.</td>
+  <td><button onclick="speak('Attempt')">🔊</button></td>
+  <td><span class="tag">🏃 Action</span></td>
+  <td><button onclick="generateSentence('attempt')">🧠</button></td>
+  <td>कोशिश करना</td>
+</tr>
+
+<tr id="verb38">
+  <td>38</td>
+  <td>Attend</td>
+  <td>uh-TEND</td>
+  <td>Attend, Attended, Attended</td>
+  <td>He attended the conference.</td>
+  <td><button onclick="speak('Attend')">🔊</button></td>
+  <td><span class="tag">🏃 Action</span></td>
+  <td><button onclick="generateSentence('attend')">🧠</button></td>
+  <td>हाज़िरी देना, भाग लेना</td>
+</tr>
+
+<tr id="verb39">
+  <td>39</td>
+  <td>Attract</td>
+  <td>uh-TRAKT</td>
+  <td>Attract, Attracted, Attracted</td>
+  <td>The flowers attract bees.</td>
+  <td><button onclick="speak('Attract')">🔊</button></td>
+  <td><span class="tag">🏃 Action</span></td>
+  <td><button onclick="generateSentence('attract')">🧠</button></td>
+  <td>आकर्षित करना</td>
+</tr>
+
+<tr id="verb40">
+  <td>40</td>
+  <td>Avoid</td>
+  <td>uh-VOYD</td>
+  <td>Avoid, Avoided, Avoided</td>
+  <td>He avoided the question.</td>
+  <td><button onclick="speak('Avoid')">🔊</button></td>
+  <td><span class="tag">🏃 Action</span></td>
+  <td><button onclick="generateSentence('avoid')">🧠</button></td>
+  <td>बचना, टालना</td>
+</tr>
+
+<tr id="verb41">
+  <td>41</td>
+  <td>Awaken</td>
+  <td>uh-WAY-ken</td>
+  <td>Awaken, Awakened, Awakened</td>
+  <td>The sound awakened him.</td>
+  <td><button onclick="speak('Awaken')">🔊</button></td>
+  <td><span class="tag">🏃 Action</span></td>
+  <td><button onclick="generateSentence('awaken')">🧠</button></td>
+  <td>जागृत करना, जगाना</td>
+</tr>
+
+<tr id="verb42">
+  <td>42</td>
+  <td>Award</td>
+  <td>uh-WORD</td>
+  <td>Award, Awarded, Awarded</td>
+  <td>She was awarded a prize.</td>
+  <td><button onclick="speak('Award')">🔊</button></td>
+  <td><span class="tag">🏃 Action</span></td>
+  <td><button onclick="generateSentence('award')">🧠</button></td>
+  <td>पुरस्कार देना</td>
+</tr>
+
+<tr id="verb43">
+  <td>43</td>
+  <td>Ask for</td>
+  <td>ASK for</td>
+  <td>Ask for, Asked for, Asked for</td>
+  <td>He asked for help.</td>
+  <td><button onclick="speak('Ask for')">🔊</button></td>
+  <td><span class="tag">🏃 Action</span></td>
+  <td><button onclick="generateSentence('ask for')">🧠</button></td>
+  <td>मांगना, निवेदन करना</td>
+</tr>
+
+<tr id="verb44">
+  <td>44</td>
+  <td>Act</td>
+  <td>AKT</td>
+  <td>Act, Acted, Acted</td>
+  <td>He acted bravely.</td>
+  <td><button onclick="speak('Act')">🔊</button></td>
+  <td><span class="tag">🏃 Action</span></td>
+  <td><button onclick="generateSentence('act')">🧠</button></td>
+  <td>क्रिया करना, अभिनय करना</td>
+</tr>
+
+<tr id="verb45">
+  <td>45</td>
+  <td>Answer</td>
+  <td>AN-ser</td>
+  <td>Answer, Answered, Answered</td>
+  <td>He answered the phone.</td>
+  <td><button onclick="speak('Answer')">🔊</button></td>
+  <td><span class="tag">🏃 Action</span></td>
+  <td><button onclick="generateSentence('answer')">🧠</button></td>
+  <td>उत्तर देना, जवाब देना</td>
+</tr>
+
+<tr id="verb46">
+  <td>46</td>
+  <td>Analyze</td>
+  <td>AN-uh-lize</td>
+  <td>Analyze, Analyzed, Analyzed</td>
+  <td>We analyzed the data.</td>
+  <td><button onclick="speak('Analyze')">🔊</button></td>
+  <td><span class="tag">🧠 Mental</span></td>
+  <td><button onclick="generateSentence('analyze')">🧠</button></td>
+  <td>विश्लेषण करना</td>
+</tr>
+
+<tr id="verb47">
+  <td>47</td>
+  <td>Annoy</td>
+  <td>uh-NOY</td>
+  <td>Annoy, Annoyed, Annoyed</td>
+  <td>He annoyed his brother.</td>
+  <td><button onclick="speak('Annoy')">🔊</button></td>
+  <td><span class="tag">🏃 Action</span></td>
+  <td><button onclick="generateSentence('annoy')">🧠</button></td>
+  <td>परेशान करना</td>
+</tr>
+
+<tr id="verb48">
+  <td>48</td>
+  <td>Assist</td>
+  <td>uh-SIST</td>
+  <td>Assist, Assisted, Assisted</td>
+  <td>She assisted the teacher in class.</td>
+  <td><button onclick="speak('Assist')">🔊</button></td>
+  <td><span class="tag">🏃 Action</span></td>
+  <td><button onclick="generateSentence('assist')">🧠</button></td>
+  <td>सहायता करना, मदद करना</td>
+</tr>
+
+<tr id="verb49">
+  <td>49</td>
+  <td>Assume</td>
+  <td>uh-SOOM</td>
+  <td>Assume, Assumed, Assumed</td>
+  <td>We assumed he was right.</td>
+  <td><button onclick="speak('Assume')">🔊</button></td>
+  <td><span class="tag">🧠 Mental</span></td>
+  <td><button onclick="generateSentence('assume')">🧠</button></td>
+  <td>मान लेना, धारणा करना</td>
+</tr>
+
+<tr id="verb50">
+  <td>50</td>
+  <td>Attach</td>
+  <td>uh-TACH</td>
+  <td>Attach, Attached, Attached</td>
+  <td>Please attach the document.</td>
+  <td><button onclick="speak('Attach')">🔊</button></td>
+  <td><span class="tag">🏃 Action</span></td>
+  <td><button onclick="generateSentence('attach')">🧠</button></td>
+  <td>जोड़ना, संलग्न करना</td>
+</tr>
+
+</table>
+
+    <!-- ...बाकी 97 शब्द इसी तरह जोड़ो -->
+  </table>
+
+  <!-- 🔧 JavaScript Functions -->
+  <script>
+    function searchTable() {
+      const input = document.getElementById("searchInput").value.toLowerCase();
+      const rows = document.querySelectorAll("table tr");
+      rows.forEach((row, index) => {
+        if (index === 0) return;
+        const text = row.textContent.toLowerCase();
+        row.style.display = text.includes(input) ? "" : "none";
+      });
+    }
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script>
+    async function downloadPDF() {
+      const { jsPDF } = window.jspdf;
+      const doc = new jsPDF();
+      doc.text("Letter A - शब्द सूची", 10, 10);
+      const rows = document.querySelectorAll("table tr");
+      let y = 20;
+      rows.forEach((row, index) => {
+        const cols = row.querySelectorAll("td, th");
+        let line = "";
+        cols.forEach(col => line += col.textContent + " | ");
+        doc.text(line, 10, y);
+        y += 10;
+        if (y > 280) {
+          doc.addPage();
+          y = 20;
+        }
+      });
+      doc.save("Letter-A-Words.pdf");
+    }
+  </script>
+
+</body>
+</html>
+    
